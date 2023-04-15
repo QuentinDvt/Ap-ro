@@ -21,6 +21,9 @@ for( let i of tab ){
 	console.log(heureActuelle.format("HH"));
 	console.log(i.nom);
 	if (heureActuelle.format("HH") >= 17 && heureActuelle.format("HH") < 22) {
+		if(myVariable === ""){
+			myVariable += "C'est l'apéro chez : " 
+		};
 		console.log("ok")
 		myVariable += i.nom + "\n";
 	};
